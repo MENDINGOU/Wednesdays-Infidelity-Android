@@ -26,7 +26,7 @@ class WindowsData
 
 		return (allocatedRAM / 1024);
 	")
-	#elseif linux
+	#elseif android 
 	@:functionCode('
 		FILE *meminfo = fopen("/proc/meminfo", "r");
 
