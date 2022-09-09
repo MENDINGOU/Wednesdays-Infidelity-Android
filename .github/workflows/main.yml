@@ -51,7 +51,7 @@ jobs:
           haxelib --quiet install flixel-ui
           haxelib --quiet install flixel-addons
           haxelib --quiet install hxp
-          haxelib git flxanimate https://github.com/Dot-Stuff/flxanimate
+          haxelib git flxanimate https://github.com/Dot-Stuff/flxanimate.git --quiet
           haxelib set flxanimate 1.2.0
           haxelib --quiet install hscript 
           haxelib git linc_luajit https://github.com/MAJigsaw77/linc_luajit.git --quiet
