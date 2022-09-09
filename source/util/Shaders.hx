@@ -276,6 +276,7 @@ class DistortionShader extends FlxShader
 
 class VHSEffect extends Effect
 {
+    #if desktop 
 	public var shader:VHSShader = new VHSShader();
 
 	public function new()
@@ -298,10 +299,12 @@ class VHSEffect extends Effect
 	{
 		shader.noisePercent.value[0] = amount;
 	}
+	#end
 }
 
 class VHSShader extends FlxShader // i HATE shaders xd -lunar https://www.shadertoy.com/view/ldjGzV https://www.shadertoy.com/view/Ms3XWH https://www.shadertoy.com/view/XtK3W3
 {
+     #if desktop 
 	@:glFragmentSource('
 		#pragma header
 
@@ -482,6 +485,7 @@ class VHSShader extends FlxShader // i HATE shaders xd -lunar https://www.shader
 	{
 		super();
 	}
+	#end
 }
 
 class BloomEffect extends Effect
