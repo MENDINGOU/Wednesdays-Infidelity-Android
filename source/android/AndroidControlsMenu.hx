@@ -12,7 +12,7 @@ import android.FlxVirtualPad;
 
 using StringTools;
 
-class AndroidControlsMenu extends MusicBeatState
+class AndroidControlsMenu extends states.MusicBeatState
 {
 	var vpad:FlxVirtualPad;
 	var hbox:FlxHitbox;
