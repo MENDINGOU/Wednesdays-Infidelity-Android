@@ -24,7 +24,9 @@ class CppAPI
 
 	public static function setWindowOppacity(a:Float)
 	{
+                #if desktop 
 		WindowsData.setWindowAlpha(a);
+                #end
 	}
 
 	public static function _setWindowLayered()
