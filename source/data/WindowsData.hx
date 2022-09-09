@@ -14,7 +14,7 @@ package data;
 #include <dwmapi.h>
 #include <winuser.h>
 ')
-#elseif linux
+#elseif android 
 @:headerCode("#include <stdio.h>")
 #end
 class WindowsData
