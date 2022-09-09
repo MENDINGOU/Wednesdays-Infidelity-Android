@@ -10,12 +10,16 @@ class CppAPI
 
 	public static function darkMode()
 	{
+                #if desktop 
 		WindowsData.setWindowColorMode(DARK);
+                #end
 	}
 
 	public static function lightMode()
 	{
+                #if desktop  
 		WindowsData.setWindowColorMode(LIGHT);
+                #end
 	}
 
 	public static function setWindowOppacity(a:Float)
@@ -25,7 +29,9 @@ class CppAPI
 
 	public static function _setWindowLayered()
 	{
+                #if desktop 
 		WindowsData._setWindowLayered();
+                #end
 	}
 	#end
 }
