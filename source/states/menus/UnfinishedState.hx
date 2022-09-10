@@ -54,6 +54,7 @@ class UnfinishedState extends MusicBeatState
 	{
                 #if android 
                 addVirtualPad(NONE, A);
+                addPadCamera();
                 #end
 		super.create();
 
