@@ -93,7 +93,7 @@ class UnfinishedState extends MusicBeatState
 	{
 		super.update(elapsed);
 
-		if (canPress && (FlxG.keys.justPressed.SPACE || _virtualPad.buttonA.justPressed)
+		if (canPress && (FlxG.keys.justPressed.SPACE || _virtualpad.buttonA.justPressed)
 		{
 			canPress = false;
 
