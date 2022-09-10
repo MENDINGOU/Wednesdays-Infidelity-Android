@@ -41,7 +41,7 @@ class AndroidControlsMenu extends states.MusicBeatState
 		bg.color = FlxColor.fromHSB(FlxG.random.int(0, 359), FlxG.random.float(0, 0.8), FlxG.random.float(0.3, 1));
 		add(bg);
 
-		var titleText:Alphabet = new Alphabet(0, 0, "Android Controls", true, false, 0, 0.6);
+		var titleText:Alphabet = new gameObjects.Alphabet(0, 0, "Android Controls", true, false, 0, 0.6);
 		titleText.x += 60;
 		titleText.y += 40;
 		titleText.alpha = 0.4;
