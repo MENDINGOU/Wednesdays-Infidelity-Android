@@ -49,10 +49,7 @@ class WarningState extends MusicBeatState
 
 	override function create()
 	{
-                #if android
-                addVirtualPad(UP_DOWN, A_B_E);
-                addPadCamera();
-                #end
+                
 		super.create();
 
 		if (ClientPrefs.doNotShowWarnings)
@@ -137,7 +134,10 @@ class WarningState extends MusicBeatState
 		var option:Option = new Option('Intensive Shaders', "Uncheck this if you don't want to run Intensive Shaders!", 'intensiveShaders', 'bool', true);
 		addOption(option);
 		
-		
+		#if android
+                addVirtualPad(UP_DOWN, A_B_E);
+                addPadCamera();
+                #end
 
 		genOptions();
 	}
