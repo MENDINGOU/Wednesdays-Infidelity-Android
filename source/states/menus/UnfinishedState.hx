@@ -52,10 +52,7 @@ class UnfinishedState extends MusicBeatState
 
 	override function create()
 	{
-                #if android 
-                addVirtualPad(NONE, A);
-                addPadCamera();
-                #end
+                
 		super.create();
 
 		FlxG.camera.alpha = 0;
@@ -77,6 +74,11 @@ class UnfinishedState extends MusicBeatState
 		warnText2.fieldWidth = 1100;
 
 		add(warnText2);
+
+                #if android 
+                addVirtualPad(NONE, A);
+                addPadCamera();
+                #end
 
 		warnText2.screenCenter();
 		warnText2.y += 80;
