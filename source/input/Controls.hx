@@ -411,7 +411,7 @@ class Controls extends FlxActionSet
 		inline forEachBound(Control.NOTE_RIGHT, (action, state) -> addbuttonuNOTES(action, hitbox.buttonRight, state));	
 	}
 	
-	public function setVirtualPadUI(virtualPad:FlxVirtualPad, ?DPad:FlxDPadMode, ?Action:FlxActionMode) 
+	public function setVirtualPadUI(virtualPad:FlxVirtualPad, DPad:FlxDPadMode, Action:FlxActionMode) 
 	{
 		switch (DPad)
 		{
@@ -474,7 +474,7 @@ class Controls extends FlxActionSet
 		}
 	}
 
-	public function setVirtualPadNOTES(virtualPad:FlxVirtualPad, ?DPad:FlxDPadMode, ?Action:FlxActionMode) 
+	public function setVirtualPadNOTES(virtualPad:FlxVirtualPad, DPad:FlxDPadMode, Action:FlxActionMode) 
 	{	
 		switch (DPad)
 		{
